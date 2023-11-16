@@ -23,4 +23,11 @@ public class ActorService {
 		return dto;
 	}
 	
+	@Transactional(readOnly = true)
+	public ActorDTO findById(Long id) {
+		Actor result = actorRepository.findById(id).get();
+		ActorDTO dto = new ActorDTO(result);
+		return dto;
+	}
+	
 }
