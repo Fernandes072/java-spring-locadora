@@ -22,7 +22,7 @@ public class Actor {
 	@Column(name = "last_name")
 	private String lastName;
 	
-	@Column(name = "lastUpdate")
+	@Column(name = "last_update")
 	private String lastUpdate;
 	
 	public Actor() {
